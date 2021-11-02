@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nlI2rYn1xnn3/QLdP1JQFFdx41k9pd8pyIJgRJ5abucmewK4EuYwV4cGnrvsVdK5oAHIR7GO5bs/QYjARUtKkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arthu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
