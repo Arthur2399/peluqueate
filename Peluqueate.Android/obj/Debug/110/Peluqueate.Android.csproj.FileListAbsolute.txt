@@ -54,6 +54,10 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\mipm
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\mipmap-xxxhdpi\icon.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\fondo.jpg
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\avatar.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\empleados.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\avatarpequeno.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\uploadflags.txt
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\android\assets\FormsViewGroup.dll

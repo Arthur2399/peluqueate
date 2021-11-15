@@ -10,7 +10,7 @@ namespace Peluqueate
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new PreLogin());
         }
 
         protected override void OnStart()
