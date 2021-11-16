@@ -4,9 +4,11 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\ref\P
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.pdb
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Login.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginEmpleados.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginUsuarios.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\PreLogin.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Registro.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.AssemblyInfoInputs.cache
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.AssemblyInfo.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.csproj.CoreCompileInputs.cache

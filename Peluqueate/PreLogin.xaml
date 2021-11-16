@@ -7,6 +7,10 @@
             
             <Image Source="fondo.png" Aspect="AspectFill"/>
             <BoxView Color="#150050" Opacity="0.7"/>
+            <Image Source="services.png"
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   Margin="100,-270,90,290"/>
             
             <Grid>
                 <Grid.RowDefinitions>
@@ -15,17 +19,37 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <ImageButton Source="avatar.png"
-                             Clicked="ImageButton_Clicked"
-                             Grid.Row="1"  
-                             WidthRequest="50" 
-                             HeightRequest="50" 
-                             Margin="210,300,80,300"/>
-                
-                <Image Grid.Row="1" Source="empleados.png" Opacity="1" WidthRequest="100" HeightRequest="100" Margin="-150,300,0,290"/>
-                <Label Text="Soy empleado" TextColor="White" Grid.Row="1" Margin="75,400,0,0"/>
-                <Label Text="Soy Cliente" TextColor="White" Grid.Row="1" Margin="240,400,0,30"/>
-                
+                <Image Source="avatar.png"
+                       Grid.Row="1"  
+                       WidthRequest="50" 
+                       HeightRequest="50" 
+                       Margin="235,300,80,300"/>
+
+                <Image Source="empleados.png" 
+                       Grid.Row="1"  
+                       WidthRequest="100" 
+                       HeightRequest="100" 
+                       Margin="-150,300,0,290"/>
+
+                <Button Text="Soy Empleado" 
+                        TextColor="White" 
+                        x:Name="btn_empleados"
+                        Clicked="btn_empleados_Clicked"
+                        BackgroundColor="#150050" 
+                        Opacity="0.9"
+                        Grid.Row="1" 
+                        Margin="50,390,200,250"/>
+
+                <Button Text="Soy Cliente" 
+                        TextColor="White" 
+                        x:Name="btn_clientes"
+                        Clicked="btn_clientes_Clicked"
+                        BackgroundColor="#150050" 
+                        Opacity="0.9"
+                        Grid.Row="1" 
+                        Margin="220,390,50,250"/>
+
+               
                 <Label Text="2021 © Copyright by Universidad Israel." TextColor="White" Grid.Row="2" Margin="90,0,0,15"/>
 
             </Grid>
