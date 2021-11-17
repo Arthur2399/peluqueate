@@ -7,6 +7,7 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\App.x
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginEmpleados.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginUsuarios.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Perfil.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\PreLogin.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Registro.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.AssemblyInfoInputs.cache
@@ -16,3 +17,4 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\XamlC
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\ref\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.pdb
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.csproj.AssemblyReference.cache

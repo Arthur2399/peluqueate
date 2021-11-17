@@ -58,6 +58,9 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\draw
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\avatar.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\empleados.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\services.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\pared.jpg
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\barber.jpg
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\servicesmorado.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\uploadflags.txt
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\android\assets\FormsViewGroup.dll

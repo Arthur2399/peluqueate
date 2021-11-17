@@ -4,7 +4,6 @@
              x:Class="Peluqueate.PreLogin">
     <ContentPage.Content>
         <Grid >
-            
             <Image Source="fondo.png" Aspect="AspectFill"/>
             <BoxView Color="#150050" Opacity="0.7"/>
             <Image Source="services.png"
@@ -23,35 +22,33 @@
                        Grid.Row="1"  
                        WidthRequest="50" 
                        HeightRequest="50" 
-                       Margin="235,300,80,300"/>
+                       Margin="135,295,-15,350"/>
 
                 <Image Source="empleados.png" 
                        Grid.Row="1"  
                        WidthRequest="100" 
                        HeightRequest="100" 
-                       Margin="-150,300,0,290"/>
+                       Margin="-170,285,-15,350"/>
 
-                <Button Text="Soy Empleado" 
+                <Label  Text="Soy Empleado" 
                         TextColor="White" 
-                        x:Name="btn_empleados"
-                        Clicked="btn_empleados_Clicked"
-                        BackgroundColor="#150050" 
-                        Opacity="0.9"
+                        x:Name="lb_empleados"
+                        FontAttributes="Bold"
                         Grid.Row="1" 
-                        Margin="50,390,200,250"/>
+                        Margin="75,390,200,250"/>
 
-                <Button Text="Soy Cliente" 
+                <Label  Text="Soy Cliente" 
                         TextColor="White" 
-                        x:Name="btn_clientes"
-                        Clicked="btn_clientes_Clicked"
-                        BackgroundColor="#150050" 
-                        Opacity="0.9"
+                        x:Name="lb_clientes"
+                        FontAttributes="Bold"
                         Grid.Row="1" 
-                        Margin="220,390,50,250"/>
+                        Margin="240,390,50,250"/>
 
                
-                <Label Text="2021 © Copyright by Universidad Israel." TextColor="White" Grid.Row="2" Margin="90,0,0,15"/>
-
+                <Label Text="2021 © Copyright by Universidad Israel." 
+                       TextColor="White" 
+                       Grid.Row="2" 
+                       Margin="90,0,0,15"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

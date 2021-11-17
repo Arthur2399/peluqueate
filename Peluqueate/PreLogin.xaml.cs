@@ -15,16 +15,36 @@ namespace Peluqueate
         public PreLogin()
         {
             InitializeComponent();
+            lbLoginEmpleadosFucn();
+            lbLoginUsuariosFucn();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private async void btn_empleados_Clicked(object sender, EventArgs e)
+        void lbLoginEmpleadosFucn()
         {
-            await Navigation.PushAsync(new LoginEmpleados());
+            lb_empleados.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Navigation.PushAsync(new LoginEmpleados());
+                   ;
+                }
+                )
+            });
+
         }
 
-        private async void btn_clientes_Clicked(object sender, EventArgs e)
+        void lbLoginUsuariosFucn()
         {
-            await Navigation.PushAsync(new LoginUsuarios());
+            lb_clientes.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Navigation.PushAsync(new LoginUsuarios());
+                   
+                }
+                )
+            });
         }
     }
 }
