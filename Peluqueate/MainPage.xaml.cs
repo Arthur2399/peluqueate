@@ -8,12 +8,16 @@ using Xamarin.Forms;
 
 namespace Peluqueate
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
             InitializeComponent();
+            this.Master = new Master();
+            this.Detail = new NavigationPage(new Detail());
             NavigationPage.SetHasNavigationBar(this, false);
+            App.MasterDet = this;
+
         }
     }
 }
