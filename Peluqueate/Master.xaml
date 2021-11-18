@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.Master"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3E065F">
+        <Image Source="barberoFeliz.png" Margin="0,-100,0,0"/>
+            <Image Source="peluqueate.png" Margin="100,10,100,10"/>
+            <Button Text="   Mi Perfil" x:Name="btn_MiPerfil" BackgroundColor="#3E065F" FontSize="16"  HorizontalOptions="Start" TextColor="White" Image="MiPerfil.png" Clicked="btn_MiPerfil_Clicked"/>
+            <Button Text="   Mis Citas" x:Name="btn_MisCitas" BackgroundColor="#3E065F" FontSize="16"  HorizontalOptions="Start" TextColor="White" Image="calendario.png" Clicked="btn_MisCitas_Clicked"/>
+            <Button Text="   Agendar Citas" x:Name="btn_AgendarCitas" BackgroundColor="#3E065F" FontSize="16"  HorizontalOptions="Start" TextColor="White" Image="cuaderno.png" Clicked="btn_AgendarCitas_Clicked"/>
+            <Button Text="   Acerca de" x:Name="btn_AcercaDe" BackgroundColor="#3E065F" FontSize="16"  HorizontalOptions="Start"  TextColor="White" Image="AcercaDe.png" Clicked="btn_AcercaDe_Clicked"/>
+            <Button Text="   Cerrar Sesión" x:Name="btn_Salir" BackgroundColor="#3E065F" FontSize="16"  HorizontalOptions="Start"  TextColor="White" Image="cerrarSesion.png" Clicked="btn_Salir_Clicked_1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

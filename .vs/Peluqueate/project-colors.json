@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f0651151-e452-47eb-836f-606a7827fa63": {
+      "ProjectGuid": "f0651151-e452-47eb-836f-606a7827fa63",
+      "DisplayName": "Peluqueate",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "9e1289a6-3f60-4cc5-9da5-e7adb069df7f": {
+      "ProjectGuid": "9e1289a6-3f60-4cc5-9da5-e7adb069df7f",
+      "DisplayName": "Peluqueate.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
