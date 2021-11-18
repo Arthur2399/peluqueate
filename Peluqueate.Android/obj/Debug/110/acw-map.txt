@@ -1,6 +1,9 @@
 Peluqueate.Droid.MainActivity, Peluqueate.Android;crc643285ddfd82d092a3.MainActivity
 Peluqueate.Droid.MainActivity;crc643285ddfd82d092a3.MainActivity
 peluqueate.droid.MainActivity;crc643285ddfd82d092a3.MainActivity
+Peluqueate.Droid.SplashActivity, Peluqueate.Android;crc643285ddfd82d092a3.SplashActivity
+Peluqueate.Droid.SplashActivity;crc643285ddfd82d092a3.SplashActivity
+peluqueate.droid.SplashActivity;crc643285ddfd82d092a3.SplashActivity
 AndroidX.Activity.IOnBackPressedDispatcherOwner, Xamarin.AndroidX.Activity;androidx.activity.OnBackPressedDispatcherOwner
 AndroidX.Activity.IOnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
 androidx.activity.OnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner

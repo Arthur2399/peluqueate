@@ -6,7 +6,7 @@
         <Grid >
             <Image Source="fondo.png" Aspect="AspectFill"/>
             <BoxView Color="#150050" Opacity="0.7"/>
-            <Image Source="services.png"
+            <Image Source="peluqueate.png"
                    WidthRequest="100" 
                    HeightRequest="100" 
                    Margin="100,-270,90,290"/>

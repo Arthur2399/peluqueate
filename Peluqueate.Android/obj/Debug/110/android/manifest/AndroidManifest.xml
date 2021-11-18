@@ -11,7 +11,8 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Peluqueate.Android" android:theme="@style/MainTheme">
-    <activity android:name="crc643285ddfd82d092a3.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="Peluqueate" android:theme="@style/MainTheme">
+    <activity android:name="crc643285ddfd82d092a3.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Peluqueate" android:theme="@style/MainTheme" />
+    <activity android:name="crc643285ddfd82d092a3.SplashActivity" android:configChanges="screenSize" android:exported="true" android:label="SplashActivity" android:noHistory="true" android:theme="@style/SplashTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
