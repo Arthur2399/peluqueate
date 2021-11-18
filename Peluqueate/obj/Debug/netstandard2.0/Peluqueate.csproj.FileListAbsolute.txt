@@ -2,6 +2,7 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluq
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\ref\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.pdb
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.csproj.AssemblyReference.cache
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\AcercaDe.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\App.xaml.g.cs
