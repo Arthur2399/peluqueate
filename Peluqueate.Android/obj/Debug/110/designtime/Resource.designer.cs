@@ -16724,64 +16724,64 @@ namespace Peluqueate.Droid
 			public const int avd_show_password = 2131165272;
 			
 			// aapt resource value: 0x7F070059
-			public const int barber = 2131165273;
+			public const int barberoFeliz = 2131165273;
 			
 			// aapt resource value: 0x7F07005A
-			public const int barberoFeliz = 2131165274;
+			public const int btn_checkbox_checked_mtrl = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
-			public const int btn_checkbox_checked_mtrl = 2131165275;
+			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int btn_checkbox_checked_to_unchecked_mtrl_animation = 2131165276;
+			public const int btn_checkbox_unchecked_mtrl = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int btn_checkbox_unchecked_mtrl = 2131165277;
+			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int btn_checkbox_unchecked_to_checked_mtrl_animation = 2131165278;
+			public const int btn_radio_off_mtrl = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int btn_radio_off_mtrl = 2131165279;
+			public const int btn_radio_off_to_on_mtrl_animation = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int btn_radio_off_to_on_mtrl_animation = 2131165280;
+			public const int btn_radio_on_mtrl = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int btn_radio_on_mtrl = 2131165281;
+			public const int btn_radio_on_to_off_mtrl_animation = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int btn_radio_on_to_off_mtrl_animation = 2131165282;
+			public const int calendario = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int calendario = 2131165283;
+			public const int camara = 2131165283;
 			
 			// aapt resource value: 0x7F070064
 			public const int cerrarSesion = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int chica = 2131165285;
+			public const int cuaderno = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int cuaderno = 2131165286;
+			public const int design_fab_background = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int design_fab_background = 2131165287;
+			public const int design_ic_visibility = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int design_ic_visibility = 2131165288;
+			public const int design_ic_visibility_off = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int design_ic_visibility_off = 2131165289;
+			public const int design_password_eye = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int design_password_eye = 2131165290;
+			public const int design_snackbar_background = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int design_snackbar_background = 2131165291;
+			public const int empleados = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int empleados = 2131165292;
+			public const int foco = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
 			public const int fondo = 2131165293;
@@ -16916,16 +16916,22 @@ namespace Peluqueate.Droid
 			public const int preference_list_divider_material = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int splash_screen = 2131165337;
+			public const int splash = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int test_custom_background = 2131165338;
+			public const int splash_screen = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int tooltip_frame_dark = 2131165339;
+			public const int subir = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int tooltip_frame_light = 2131165340;
+			public const int test_custom_background = 2131165340;
+			
+			// aapt resource value: 0x7F07009D
+			public const int tooltip_frame_dark = 2131165341;
+			
+			// aapt resource value: 0x7F07009E
+			public const int tooltip_frame_light = 2131165342;
 			
 			static Drawable()
 			{
@@ -29889,25 +29895,28 @@ namespace Peluqueate.Droid
 		{
 			
 			// aapt resource value: 0x7F110000
-			public const int image_share_filepaths = 2131820544;
+			public const int file_paths = 2131820544;
 			
 			// aapt resource value: 0x7F110001
-			public const int standalone_badge = 2131820545;
+			public const int image_share_filepaths = 2131820545;
 			
 			// aapt resource value: 0x7F110002
-			public const int standalone_badge_gravity_bottom_end = 2131820546;
+			public const int standalone_badge = 2131820546;
 			
 			// aapt resource value: 0x7F110003
-			public const int standalone_badge_gravity_bottom_start = 2131820547;
+			public const int standalone_badge_gravity_bottom_end = 2131820547;
 			
 			// aapt resource value: 0x7F110004
-			public const int standalone_badge_gravity_top_start = 2131820548;
+			public const int standalone_badge_gravity_bottom_start = 2131820548;
 			
 			// aapt resource value: 0x7F110005
-			public const int standalone_badge_offset = 2131820549;
+			public const int standalone_badge_gravity_top_start = 2131820549;
 			
 			// aapt resource value: 0x7F110006
-			public const int xamarin_essentials_fileprovider_file_paths = 2131820550;
+			public const int standalone_badge_offset = 2131820550;
+			
+			// aapt resource value: 0x7F110007
+			public const int xamarin_essentials_fileprovider_file_paths = 2131820551;
 			
 			static Xml()
 			{

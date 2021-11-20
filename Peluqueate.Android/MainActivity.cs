@@ -24,5 +24,7 @@ namespace Peluqueate.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+
     }
 }

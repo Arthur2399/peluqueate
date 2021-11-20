@@ -7,6 +7,7 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluq
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\AcercaDe.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Detail.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\EditarPerfil.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginEmpleados.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\LoginUsuarios.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\MainPage.xaml.g.cs

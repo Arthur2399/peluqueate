@@ -1677,19 +1677,19 @@ public final class R {
 		public static final int abc_vector_test = 0x7f070054;
 		public static final int avd_hide_password = 0x7f070057;
 		public static final int avd_show_password = 0x7f070058;
-		public static final int btn_checkbox_checked_mtrl = 0x7f07005b;
-		public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f07005c;
-		public static final int btn_checkbox_unchecked_mtrl = 0x7f07005d;
-		public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f07005e;
-		public static final int btn_radio_off_mtrl = 0x7f07005f;
-		public static final int btn_radio_off_to_on_mtrl_animation = 0x7f070060;
-		public static final int btn_radio_on_mtrl = 0x7f070061;
-		public static final int btn_radio_on_to_off_mtrl_animation = 0x7f070062;
-		public static final int design_fab_background = 0x7f070067;
-		public static final int design_ic_visibility = 0x7f070068;
-		public static final int design_ic_visibility_off = 0x7f070069;
-		public static final int design_password_eye = 0x7f07006a;
-		public static final int design_snackbar_background = 0x7f07006b;
+		public static final int btn_checkbox_checked_mtrl = 0x7f07005a;
+		public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f07005b;
+		public static final int btn_checkbox_unchecked_mtrl = 0x7f07005c;
+		public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f07005d;
+		public static final int btn_radio_off_mtrl = 0x7f07005e;
+		public static final int btn_radio_off_to_on_mtrl_animation = 0x7f07005f;
+		public static final int btn_radio_on_mtrl = 0x7f070060;
+		public static final int btn_radio_on_to_off_mtrl_animation = 0x7f070061;
+		public static final int design_fab_background = 0x7f070066;
+		public static final int design_ic_visibility = 0x7f070067;
+		public static final int design_ic_visibility_off = 0x7f070068;
+		public static final int design_password_eye = 0x7f070069;
+		public static final int design_snackbar_background = 0x7f07006a;
 		public static final int ic_clock_black_24dp = 0x7f07006f;
 		public static final int ic_keyboard_black_24dp = 0x7f070070;
 		public static final int ic_mtrl_checked_circle = 0x7f070071;
@@ -1729,9 +1729,9 @@ public final class R {
 		public static final int notification_template_icon_low_bg = 0x7f070094;
 		public static final int notification_tile_bg = 0x7f070095;
 		public static final int notify_panel_notification_icon_bg = 0x7f070096;
-		public static final int test_custom_background = 0x7f07009a;
-		public static final int tooltip_frame_dark = 0x7f07009b;
-		public static final int tooltip_frame_light = 0x7f07009c;
+		public static final int test_custom_background = 0x7f07009c;
+		public static final int tooltip_frame_dark = 0x7f07009d;
+		public static final int tooltip_frame_light = 0x7f07009e;
 	}
 	public static final class id {
 		public static final int BOTTOM_END = 0x7f080001;
@@ -4688,10 +4688,10 @@ public final class R {
 		public static final int ViewStubCompat_android_layout = 1;
 	}
 	public static final class xml {
-		public static final int standalone_badge = 0x7f110001;
-		public static final int standalone_badge_gravity_bottom_end = 0x7f110002;
-		public static final int standalone_badge_gravity_bottom_start = 0x7f110003;
-		public static final int standalone_badge_gravity_top_start = 0x7f110004;
-		public static final int standalone_badge_offset = 0x7f110005;
+		public static final int standalone_badge = 0x7f110002;
+		public static final int standalone_badge_gravity_bottom_end = 0x7f110003;
+		public static final int standalone_badge_gravity_bottom_start = 0x7f110004;
+		public static final int standalone_badge_gravity_top_start = 0x7f110005;
+		public static final int standalone_badge_offset = 0x7f110006;
 	}
 }

@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Peluqueate.Android.dll",
 		"FormsViewGroup.dll",
 		"Peluqueate.dll",
+		"Plugin.Media.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
