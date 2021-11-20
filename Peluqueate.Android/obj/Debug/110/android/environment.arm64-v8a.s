@@ -24,24 +24,25 @@ application_config:
 	.byte	0
 	/* jni_add_native_method_registration_attribute_present */
 	.byte	0
-	/* have_runtime_config_blob */
-	.byte	0
 	/* bound_exception_type */
 	.byte	1
 	/* package_naming_policy */
-	.zero	3
 	.word	3
 	/* environment_variable_count */
 	.word	12
 	/* system_property_count */
 	.word	0
+<<<<<<< HEAD
 	/* number_of_assemblies_in_apk */
 	.word	86
 	/* bundled_assembly_name_width */
 	.word	63
+=======
+>>>>>>> backend
 	/* android_package_name */
+	.zero	4
 	.xword	.L.env.str.1
-	.size	application_config, 40
+	.size	application_config, 32
 	.section	.rodata.env.str.2,"aMS",@progbits,1
 	.type	.L.env.str.2, @object
 .L.env.str.2:
@@ -79,7 +80,11 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
+<<<<<<< HEAD
 	.asciz	"ee0f6a8f-eea5-4e3d-9309-76a3b1040ad2"
+=======
+	.asciz	"6e4b2504-f860-45f5-b3ad-90455e0e1dc3"
+>>>>>>> backend
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
@@ -135,6 +140,7 @@ app_environment_variables:
 	.global	app_system_properties
 app_system_properties:
 	.size	app_system_properties, 0
+<<<<<<< HEAD
 	/* Bundled assembly name buffers, all 63 bytes long */
 	.section	.bss.bundled_assembly_names,"aw",@nobits
 .L.env.buf.1:
@@ -1606,3 +1612,5 @@ bundled_assemblies:
 	.xword	.L.env.buf.86
 
 	.size	bundled_assemblies, 3440
+=======
+>>>>>>> backend

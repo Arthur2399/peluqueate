@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj": {}
+    "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj": {
+    "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
+        "projectUniqueName": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
         "projectName": "Peluqueate.iOS",
-        "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
-        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\obj\\",
+        "projectPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
+        "packagesPath": "C:\\Users\\pit_1\\.nuget\\packages\\",
+        "outputPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pit_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
-                "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj"
+              "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
+                "projectPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj"
               }
             }
           }
@@ -42,10 +42,6 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
-            "Xam.Plugin.Media": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
@@ -69,22 +65,22 @@
         }
       }
     },
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
+    "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
+        "projectUniqueName": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj",
         "projectName": "Peluqueate",
-        "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
-        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\obj\\",
+        "projectPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj",
+        "packagesPath": "C:\\Users\\pit_1\\.nuget\\packages\\",
+        "outputPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\pit_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -115,9 +111,13 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "Xam.Plugin.Media": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[13.0.1, )"
+            },
+            "Plugin.Toast": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -138,7 +138,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

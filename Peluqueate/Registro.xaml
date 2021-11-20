@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Frame Background="#150050" Margin="0,-10,0,-50">
-                <Image Source="peluqueate.png" Margin="110,0,110,0"/>
+                <Image Source="http://192.168.194.128:82/api/image/Pikachu.png" Margin="110,0,110,0"/>
             </Frame>
             <Grid>
 
@@ -38,7 +38,9 @@
                         Keyboard="Text"  
                         Grid.Row="2" 
                         Grid.Column="0" 
-                        Margin="0,0,0,0" />
+                        Margin="0,0,0,0" 
+                        x:Name="txtNombre"
+                        />
 
                 <Entry  Placeholder="Apellido" 
                         HorizontalTextAlignment="Center" 
@@ -46,7 +48,9 @@
                         TextColor="#150050" 
                         Keyboard="Text" 
                         Grid.Row="2" 
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        x:Name="txtApellido"
+                        />
 
                 <Label  Text="Fecha de nacimiento: " 
                         HorizontalTextAlignment="Center" 
@@ -56,19 +60,23 @@
                         Grid.Column="0" 
                         FontAttributes="Bold"/>
 
-                <DatePicker MinimumDate="01/01/2018"
-                            MaximumDate="12/31/2018"
+                <DatePicker MinimumDate="01/01/1900"
+                            MaximumDate="12/31/3000"
                             TextColor="#150050"
-                            Date="06/21/2018"
                             Grid.Row="3" 
-                            Grid.Column="1"/>
+                            Grid.Column="1"
+                            x:Name="txtFecha"
+                            Format="dd/MM/yyyy"
+                            />
 
                 <Entry  Placeholder="E-mail" 
                         PlaceholderColor="#150050"  
                         TextColor="#150050" Keyboard="Text"  
                         HorizontalTextAlignment="Center" 
                         Grid.Row="4" 
-                        Grid.ColumnSpan="2" />
+                        Grid.ColumnSpan="2" 
+                        x:Name="txtEmail"
+                        />
 
 
                 <Label  Text="Provincia: " 
@@ -79,28 +87,30 @@
                         Grid.Row="5" 
                         Grid.Column="0"/>
 
-                <Picker Title="Seleccione provincia" 
-                        ItemsSource="{Binding CountryList}"  
-                        SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
+                    <Picker Title="Seleccione provincia" 
+                        x:Name="PkProvincias"
                         TitleColor="#150050" 
                         Grid.Row="5" 
-                        Grid.Column="1"/>
-
-
-                <Label  Text="Ciudad: " 
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                            SelectedIndexChanged="PkProvincias_SelectedIndexChanged"
+                     />
+                    
+                    <Label  Text="Ciudad:" 
                         FontAttributes="Bold" 
                         HorizontalTextAlignment="Center" 
                         TextColor="#150050" 
                         FontSize="19" 
                         Grid.Row="6" 
-                        Grid.Column="0"/>
+                        Grid.Column="0 "/>
 
-                <Picker Title="Seleccione ciudad" 
-                        ItemsSource="{Binding CountryList}" 
-                        SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
+                <Picker Title="Seleccione ciudad"
+                        x:Name="PkrCiudades"
                         TitleColor="#150050" 
                         Grid.Row="6" 
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                        />
 
                 <Label  Text="Género: " 
                         FontAttributes="Bold" 
@@ -108,14 +118,16 @@
                         TextColor="#150050" 
                         FontSize="19" 
                         Grid.Row="7" 
-                        Grid.Column="0"/>
+                        Grid.Column="0"
+                        />
 
                 <Picker Title="Seleccione género" 
-                        ItemsSource="{Binding CountryList}" 
+                        x:Name="PkrGenero"
                         SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
                         TitleColor="#150050" 
                         Grid.Row="7" 
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        />
 
                 <Entry  Placeholder="Contraseña" 
                         IsPassword="True" 
@@ -124,7 +136,9 @@
                         Keyboard="Text" 
                         HorizontalTextAlignment="Center"  
                         Grid.Row="8" 
-                        Grid.ColumnSpan="2"/>
+                        Grid.ColumnSpan="2"
+                        x:Name="txtContrasena1"
+                        />
 
                 <Entry  Placeholder="Repetir contraseña" 
                         IsPassword="True" 
@@ -133,7 +147,9 @@
                         HorizontalTextAlignment="Center" 
                         Keyboard="Text"  
                         Grid.Row="9" 
-                        Grid.ColumnSpan="2" />
+                        Grid.ColumnSpan="2" 
+                        x:Name="txtContrasena2"
+                        />
 
                 <Button Text="Registrarme" 
                         Background="#150050" 
