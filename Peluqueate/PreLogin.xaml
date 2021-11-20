@@ -18,16 +18,16 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Image Source="avatar.png"
+                <Image Source="http://192.168.194.128:82/api/image/avatar.png"
                        Grid.Row="1"  
                        WidthRequest="50" 
                        HeightRequest="50" 
                        Margin="135,295,-15,350"/>
 
-                <Image Source="empleados.png" 
+                <Image Source="http://192.168.194.128:82/api/image/empleados.png" 
                        Grid.Row="1"  
-                       WidthRequest="100" 
-                       HeightRequest="100" 
+                       WidthRequest="50" 
+                       HeightRequest="50" 
                        Margin="-170,285,-15,350"/>
 
                 <Label  Text="Soy Empleado" 

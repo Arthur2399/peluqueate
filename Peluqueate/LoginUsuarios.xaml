@@ -7,7 +7,7 @@
             
             <Image Source="fondo.png" Aspect="AspectFill"/>
             <BoxView Color="#150050" Opacity="0.7"/>
-            <Image Source="peluqueate.png"
+            <Image Source="http://192.168.194.128:82/api/image/peluqueate.png"
                    WidthRequest="100" 
                    HeightRequest="100" 
                    Margin="100,-270,90,290"/>
@@ -16,12 +16,13 @@
                 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
+
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Image Grid.Row="0" 
-                       Source="avatar.png" 
+                       Source="http://192.168.194.128:82/api/image/avatar.png" 
                        WidthRequest="100" 
                        HeightRequest="100" 
                        Margin="0,175,0,0"/>
@@ -30,12 +31,14 @@
                     
                     <Entry Placeholder="E-mail" 
                            PlaceholderColor="White" 
-                           TextColor="White"/>
+                           TextColor="White"
+                           x:Name="txtEmail"/>
                     
                     <Entry Placeholder="Contraseña" 
                            PlaceholderColor="White" 
                            IsPassword="True" 
-                           TextColor="White"/>
+                           TextColor="White"
+                           x:Name="txtContrasena"/>
                     
                     <Button Text="Inciar Sesión" 
                             x:Name="btn_IniciarSesion"

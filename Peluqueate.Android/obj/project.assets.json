@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v11.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Toast/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Toast.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Toast.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,22 +29,6 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
-        }
-      },
-      "Xam.Plugin.Media/5.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.AndroidX.Core": "1.1.0",
-          "Xamarin.Essentials": "1.5.2"
-        },
-        "frameworkAssemblies": [
-          "Java.Interop"
-        ],
-        "compile": {
-          "lib/monoandroid10.0/Plugin.Media.dll": {}
-        },
-        "runtime": {
-          "lib/monoandroid10.0/Plugin.Media.dll": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -1560,7 +1564,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xam.Plugin.Media": "5.0.1",
+          "Newtonsoft.Json": "13.0.1",
+          "Plugin.Toast": "2.2.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2244"
         },
@@ -1574,6 +1579,67 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Plugin.Toast/2.2.0": {
+      "sha512": "PDq+r0P/WRu4YZimpwwfeLaTpHCVWlcw3MjJRC1be6Cg4ORfXL8YDz3HchnrRssRueUgP9ouwzLaQ4tLCD3Q4w==",
+      "type": "package",
+      "path": "plugin.toast/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.dll",
+        "lib/MonoAndroid10/Plugin.Toast.dll.mdb",
+        "lib/MonoAndroid10/Plugin.Toast.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.xml",
+        "lib/UAP10/Plugin.Toast.Abstractions.dll",
+        "lib/UAP10/Plugin.Toast.Abstractions.pdb",
+        "lib/UAP10/Plugin.Toast.dll",
+        "lib/UAP10/Plugin.Toast.pdb",
+        "lib/UAP10/Plugin.Toast.pri",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll.mdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.xml",
+        "lib/netstandard/Plugin.Toast.Abstractions.dll",
+        "lib/netstandard/Plugin.Toast.Abstractions.pdb",
+        "lib/netstandard/Plugin.Toast.deps.json",
+        "lib/netstandard/Plugin.Toast.dll",
+        "lib/netstandard/Plugin.Toast.pdb",
+        "plugin.toast.2.2.0.nupkg.sha512",
+        "plugin.toast.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1619,46 +1685,6 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Xam.Plugin.Media/5.0.1": {
-      "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
-      "type": "package",
-      "path": "xam.plugin.media/5.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Plugin.Media.dll",
-        "lib/monoandroid10.0/Plugin.Media.pdb",
-        "lib/monoandroid10.0/Plugin.Media.xml",
-        "lib/monoandroid80/Plugin.Media.dll",
-        "lib/monoandroid80/Plugin.Media.pdb",
-        "lib/monoandroid80/Plugin.Media.xml",
-        "lib/monoandroid81/Plugin.Media.dll",
-        "lib/monoandroid81/Plugin.Media.pdb",
-        "lib/monoandroid81/Plugin.Media.xml",
-        "lib/monoandroid90/Plugin.Media.dll",
-        "lib/monoandroid90/Plugin.Media.pdb",
-        "lib/monoandroid90/Plugin.Media.xml",
-        "lib/netstandard1.0/Plugin.Media.dll",
-        "lib/netstandard1.0/Plugin.Media.pdb",
-        "lib/netstandard1.0/Plugin.Media.xml",
-        "lib/netstandard2.0/Plugin.Media.dll",
-        "lib/netstandard2.0/Plugin.Media.pdb",
-        "lib/netstandard2.0/Plugin.Media.xml",
-        "lib/tizen40/Plugin.Media.dll",
-        "lib/tizen40/Plugin.Media.pdb",
-        "lib/tizen40/Plugin.Media.xml",
-        "lib/uap10.0.16299/Plugin.Media.dll",
-        "lib/uap10.0.16299/Plugin.Media.pdb",
-        "lib/uap10.0.16299/Plugin.Media.pri",
-        "lib/uap10.0.16299/Plugin.Media.xml",
-        "lib/xamarinios10/Plugin.Media.dll",
-        "lib/xamarinios10/Plugin.Media.pdb",
-        "lib/xamarinios10/Plugin.Media.xml",
-        "readme.txt",
-        "xam.plugin.media.5.0.1.nupkg.sha512",
-        "xam.plugin.media.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.2.4.1": {
@@ -3224,32 +3250,31 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
       "Peluqueate >= 1.0.0",
-      "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2244"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arthu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\pit_1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
+      "projectUniqueName": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
       "projectName": "Peluqueate.Android",
-      "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
-      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\obj\\",
+      "projectPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
+      "packagesPath": "C:\\Users\\pit_1\\.nuget\\packages\\",
+      "outputPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\pit_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid11.0"
@@ -3261,8 +3286,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
-              "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj"
+            "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
+              "projectPath": "D:\\Uisrael\\9no\\proyecto\\programa\\peluqueate\\Peluqueate\\Peluqueate.csproj"
             }
           }
         }
@@ -3271,10 +3296,6 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
-          "Xam.Plugin.Media": {
-            "target": "Package",
-            "version": "[5.0.1, )"
-          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.0, )"

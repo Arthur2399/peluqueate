@@ -4,7 +4,10 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Peluqueate.Android.dll" comes first in this list. */
 		"Peluqueate.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Peluqueate.dll",
+		"Plugin.Toast.Abstractions.dll",
+		"Plugin.Toast.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

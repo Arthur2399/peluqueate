@@ -12,7 +12,7 @@ namespace Peluqueate
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MiPerfil());
+            MainPage = new NavigationPage(new PreLogin());
         }
 
         protected override void OnStart()
