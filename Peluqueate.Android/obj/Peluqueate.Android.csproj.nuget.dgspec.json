@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj": {}
+    "C:\\Proyectos9no\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj": {
+    "C:\\Proyectos9no\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
+        "projectUniqueName": "C:\\Proyectos9no\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
         "projectName": "Peluqueate.Android",
-        "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
-        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.Android\\obj\\",
+        "projectPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate.Android\\Peluqueate.Android.csproj",
+        "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
-                "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj"
+              "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
+                "projectPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj"
               }
             }
           }
@@ -54,20 +56,22 @@
         }
       }
     },
-    "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
+    "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
+        "projectUniqueName": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj",
         "projectName": "Peluqueate",
-        "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
-        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\obj\\",
+        "projectPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj",
+        "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -100,6 +104,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "System.Globalization.Calendars": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -107,6 +115,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Forms.GoogleMaps": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [
@@ -119,7 +131,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

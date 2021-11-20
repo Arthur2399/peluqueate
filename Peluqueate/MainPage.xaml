@@ -19,6 +19,12 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        <Button x:Name="btnCambiarContrasena" Text="Cambiar contraseña" Clicked="btnCambiarContrasena_Clicked"/>
+        <Button x:Name="btnAgendarCita" Text="Agendar Cita" Clicked="btnAgendarCita_Clicked"/>
+        <Button x:Name="btnAgendarCita2" Text="Agendar cita 2da vista" Clicked="btnAgendarCita2_Clicked"/>
+        <Button x:Name="btnMisCitas" Text="Mis Citas Semanales" Clicked="btnMisCitas_Clicked"/>
+        <Button x:Name="btnDetalleCita" Text="Detalle Cita" Clicked="btnDetalleCita_Clicked"/>
+        <Button x:Name="btnVerCostos" Text="Ver costos" Clicked="btnVerCostos_Clicked"/>
     </StackLayout>
 
 </ContentPage>

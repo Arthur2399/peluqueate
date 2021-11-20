@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.DetalleCita"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="LightGray">
+                <Label Text="Detalle Cita" FontSize="Title"/>
+            </Frame>
+            <Label x:Name="lblColaborador" TextColor="Black"/>
+            <Grid>
+                <Label Text="Cliente" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtCliente" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Sede" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtSede" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Fecha" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtFecha" TextColor="Black" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Hora" TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtHora" TextColor="Black" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Detalle" TextColor="Black" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtDetalle" TextColor="Black" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="Tiempo estimado" TextColor="Black" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtTiempo" TextColor="Black" Grid.Row="5" Grid.Column="1"/>
+                <Label Text="Reponsable(s)" TextColor="Black" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtResponsable" TextColor="Black" Grid.Row="6" Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Label Text="Total" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" TextColor="black" Grid.Row="0" Grid.Column="1"/>
+                <Button x:Name="btnDetalle" Text="Ver detalle" TextColor="Black" Clicked="btnDetalle_Clicked" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
+            <Grid>
+                <Button x:Name="btnNoPuedoAsistir" Text="Ver detalle" Clicked="btnNoPuedoAsistir_Clicked" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnListo" Text="Lista" Clicked="btnListo_Clicked" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

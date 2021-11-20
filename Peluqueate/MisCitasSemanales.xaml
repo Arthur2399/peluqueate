@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.MisCitasSemanales"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="LightGray">
+                <Label Text="Ver Citas" FontSize="Title"/>
+            </Frame>
+            <Label Text="Mis citas semanales" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+            <Label Text="Mi proxima cita" HorizontalOptions="Center" FontSize="Medium" TextColor="Black"/>
+            <Grid>
+                <Label Text="Fecha" HorizontalOptions="Center" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtFecha" HorizontalOptions="Center" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Hora" HorizontalOptions="Center" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtHora" HorizontalOptions="Center" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Button x:Name="btnAtras" Text="Atras" TextColor="Black" Clicked="btnAtras_Clicked" Grid.Row="2" Grid.Column="0"/>
+                <Button x:Name="btnNuevaCita" Text="Nueva Cita" TextColor="Black" Clicked="btnNuevaCita_Clicked" Grid.Row="2" Grid.Column="1"/>
+                
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

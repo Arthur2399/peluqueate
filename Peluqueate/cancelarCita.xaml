@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.cancelarCita"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+                <Frame BackgroundColor="LightGray">
+                    <Label Text="Cancelar cita" FontSize="Title"/>
+                </Frame>
+                <Label Text="Cancelar cita" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+            <Label x:Name="lblFechaHora" TextColor="Black"/>
+            <Grid>
+                <Label Text="Detalle" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+                <Label Text="Costo" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
+                <Label Text="Tiempo" Grid.Row="0" Grid.Column="2" TextColor="Black"/>
+
+            </Grid>
+            <Label Text="Cuéntamos ¿Por qué no puedes asistir?" TextColor="Black"/>
+            <Picker x:Name="picMotivo" TextColor="Black"/>
+            <Label Text="Comentario" TextColor="Black"/>
+            <Entry x:Name="txtComentario" TextColor="Black" AnchorX="10" AnchorY="70"/>
+
+            <Grid>
+                <Button x:Name="btnCancelarCita" Text="Cancelar cita" Clicked="btnCancelarCita_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnReagendarCita" Text="Reagendar cita" Clicked="btnReagendarCita_Clicked" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

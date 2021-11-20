@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.vista2AgendarCita"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="LightGray">
+                <Label Text="Agendar Cita" FontSize="Title"/>
+            </Frame>
+            <Label Text="Nueva Cita" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+            <Grid>
+                    <Label Text="Seleccione una sucursal" TextColor="Black" Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <Picker x:Name="picSucursal" TextColor="Black" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Label Text="Buscar la más cercana a mí" TextColor="Black" Grid.Row="2" Grid.Column="0" FontSize="Medium"/>
+                    <Button x:Name="btnBuscar" Text="Buscar" Clicked="btnBuscar_Clicked" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Fecha de cita: " TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+                <DatePicker x:Name="dpFechaCita" Format="d" TextColor="Black" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Hora: " TextColor="Black" Grid.Row="4" Grid.Column="0"/>
+                <TimePicker x:Name="tpHoraCita" TextColor="Black" Grid.Row="4" Grid.Column="1"/>
+                <Button x:Name="btnCancelar" Text="Cancelar" TextColor="Black" Clicked="btnCancelar_Clicked" Grid.Row="7" Grid.Column="0"/>
+                <Button x:Name="btnSiguiente" Text="Siguiente" TextColor="Black" Clicked="btnSiguiente_Clicked" Grid.Row="7" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

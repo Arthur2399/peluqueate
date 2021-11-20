@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "System.Globalization.Calendars/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,6 +18,12 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -151,12 +166,46 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "3.5.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Google.iOS.Maps/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "build/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Peluqueate/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "System.Globalization.Calendars": "4.3.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.GoogleMaps": "3.3.0"
         },
         "compile": {
           "bin/placeholder/Peluqueate.dll": {}
@@ -167,6 +216,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "System.Globalization.Calendars/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -174,6 +232,12 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -316,12 +380,46 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "3.5.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Google.iOS.Maps/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "build/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Peluqueate/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "System.Globalization.Calendars": "4.3.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.GoogleMaps": "3.3.0"
         },
         "compile": {
           "bin/placeholder/Peluqueate.dll": {}
@@ -332,6 +430,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "System.Globalization.Calendars/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -339,6 +446,12 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -481,12 +594,46 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "3.5.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Google.iOS.Maps/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "build/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Peluqueate/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "System.Globalization.Calendars": "4.3.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.GoogleMaps": "3.3.0"
         },
         "compile": {
           "bin/placeholder/Peluqueate.dll": {}
@@ -497,6 +644,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "System.Globalization.Calendars/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -504,6 +660,12 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Build.Download/0.4.11": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -646,12 +808,46 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "3.5.0"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Google.iOS.Maps/3.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.4.11"
+        },
+        "frameworkAssemblies": [
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "build/Xamarin.Google.iOS.Maps.targets": {}
+        }
+      },
       "Peluqueate/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "System.Globalization.Calendars": "4.3.0",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.GoogleMaps": "3.3.0"
         },
         "compile": {
           "bin/placeholder/Peluqueate.dll": {}
@@ -663,6 +859,44 @@
     }
   },
   "libraries": {
+    "System.Globalization.Calendars/4.3.0": {
+      "sha512": "GUlBtdOWT4LTV3I+9/PJW+56AnnChTaOqqTLFtdmype/L500M2LIyXgmtd9X2P2VOkmJd5c67H5SaC2QcL1bFA==",
+      "type": "package",
+      "path": "system.globalization.calendars/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Globalization.Calendars.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Globalization.Calendars.dll",
+        "ref/netstandard1.3/System.Globalization.Calendars.dll",
+        "ref/netstandard1.3/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/de/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/es/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/fr/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/it/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/ja/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/ko/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/ru/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/zh-hans/System.Globalization.Calendars.xml",
+        "ref/netstandard1.3/zh-hant/System.Globalization.Calendars.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.globalization.calendars.4.3.0.nupkg.sha512",
+        "system.globalization.calendars.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -708,6 +942,24 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xamarin.Build.Download/0.4.11": {
+      "sha512": "svGAoBnMVQwUbIv1+j7vDypY+2R7jruefJRmVsxhuvSFXMP8dV+yZK3UGuZa3zV5ThKimk9eqHuvRcl/JVipbA==",
+      "type": "package",
+      "path": "xamarin.build.download/0.4.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Mono.Cecil.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/System.Net.Http.Formatting.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.4.11.nupkg.sha512",
+        "xamarin.build.download.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -977,6 +1229,39 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.GoogleMaps/3.3.0": {
+      "sha512": "C1wutzR7wLgUQuiG1NgArab0X02DGOKWW10+uLBUJE+Cac0+8J/TlLVqdqEl82BDGl3n71zmiLnHd5AZlrFEfw==",
+      "type": "package",
+      "path": "xamarin.forms.googlemaps/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid70/Xamarin.Forms.GoogleMaps.Android.dll",
+        "lib/MonoAndroid70/Xamarin.Forms.GoogleMaps.dll",
+        "lib/UAP10/Xamarin.Forms.GoogleMaps.UWP.dll",
+        "lib/UAP10/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll",
+        "lib/netstandard1.0/Xamarin.Forms.GoogleMaps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll",
+        "xamarin.forms.googlemaps.3.3.0.nupkg.sha512",
+        "xamarin.forms.googlemaps.nuspec"
+      ]
+    },
+    "Xamarin.Google.iOS.Maps/3.5.0": {
+      "sha512": "aQnxCVYDwW4e7z+14CnQmxag05XRULfmfg4t+6IlsZN/nEmYHcyiX1DqWHhdQF/prJsKU0dFeRNyB7tL/g00Qw==",
+      "type": "package",
+      "path": "xamarin.google.ios.maps/3.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Xamarin.Google.iOS.Maps.targets",
+        "lib/xamarinios10/Google.Maps.dll",
+        "xamarin.google.ios.maps.3.5.0.nupkg.sha512",
+        "xamarin.google.ios.maps.nuspec"
+      ]
+    },
     "Peluqueate/1.0.0": {
       "type": "project",
       "path": "../Peluqueate/Peluqueate.csproj",
@@ -987,28 +1272,32 @@
     "Xamarin.iOS,Version=v1.0": [
       "Peluqueate >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.GoogleMaps >= 3.3.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arthu\\.nuget\\packages\\": {},
+    "C:\\Users\\juanl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
+      "projectUniqueName": "C:\\Proyectos9no\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
       "projectName": "Peluqueate.iOS",
-      "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
-      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate.iOS\\obj\\",
+      "projectPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate.iOS\\Peluqueate.iOS.csproj",
+      "packagesPath": "C:\\Users\\juanl\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\juanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1022,8 +1311,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj": {
-              "projectPath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj"
+            "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj": {
+              "projectPath": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj"
             }
           }
         }
@@ -1039,6 +1328,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.GoogleMaps": {
+            "target": "Package",
+            "version": "[3.3.0, )"
           }
         }
       }

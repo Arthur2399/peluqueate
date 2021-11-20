@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.vistaAgendarCita"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="LightGray">
+                <Label Text="Agendar Cita" FontSize="Title"/>
+            </Frame>
+            <Label Text="Nueva Cita" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+            <Grid>
+                <Frame BackgroundColor="White" BorderColor="Black">
+                    <Grid>
+                        <Label Text="Servicio" TextColor="Black" Grid.Row="0" Grid.Column="0" FontSize="Medium"/>
+                        <Picker x:Name="picServicio" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                        <Label Text="Responsable" TextColor="Black" Grid.Row="1" Grid.Column="0" FontSize="Medium"/>
+                        <Picker x:Name="picResponsable" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+            </Grid>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

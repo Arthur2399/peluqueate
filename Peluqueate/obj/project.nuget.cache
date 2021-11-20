@@ -1,14 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "/3ETRT24gqOxq9VGDPpe1Bs13exQ+An4MS+lHRhEBcvZICtGB61Q+xpKPK8dQEzAvc/6toKbEi+YpnoyC/Q1Uw==",
+  "dgSpecHash": "kEUmoFwwF1ISI75GFlPmQeaz5gf/boiE2f52zeq2T7OO9tY3BUKRXZ8T7dOB94E0wqs+L7k/mKjX28KBqM9eKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
+  "projectFilePath": "C:\\Proyectos9no\\peluqueate\\Peluqueate\\Peluqueate.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\arthu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\arthu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\arthu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\system.globalization.calendars\\4.3.0\\system.globalization.calendars.4.3.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\juanl\\.nuget\\packages\\xamarin.forms.googlemaps\\3.3.0\\xamarin.forms.googlemaps.3.3.0.nupkg.sha512"
   ],
   "logs": []
 }
