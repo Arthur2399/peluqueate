@@ -1,6 +1,6 @@
-Peluqueate\obj\
-Peluqueate.Android\obj
-Peluqueate.iOS\obj
+Peluqueate/obj/
+Peluqueate.Android/obj
+Peluqueate.iOS/obj
 Peluqueate/obj/Peluqueate.csproj.nuget.dgspec.json
 Peluqueate/obj/Peluqueate.csproj.nuget.dgspec.json
 Peluqueate/obj/Peluqueate.csproj.nuget.g.props
