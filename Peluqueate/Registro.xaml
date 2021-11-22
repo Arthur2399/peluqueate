@@ -125,8 +125,8 @@
 
                 <Button Text="Siguiente" 
                         Background="#150050" 
-                        x:Name="btn_registrarme"
-                        Clicked="btn_registrarme_Clicked"
+                        x:Name="btn_siguiente"
+                        Clicked="btn_siguiente_Clicked"
                         BorderRadius="15" 
                         TextColor="White"
                         Grid.Row="10" 

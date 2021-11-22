@@ -19,11 +19,9 @@ namespace Peluqueate
         }
 
 
-        private void btn_registrarme_Clicked(object sender, EventArgs e)
+        private async void btn_siguiente_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Mensaje", "¡Registro correcto!", "Aceptar");
+            await Navigation.PushAsync(new RegistrarPreguntas());
         }
-
-
     }
 }

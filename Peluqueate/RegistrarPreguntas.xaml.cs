@@ -17,5 +17,10 @@ namespace Peluqueate
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private async void bt_registrarme_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginUsuarios());
+        }
     }
 }
