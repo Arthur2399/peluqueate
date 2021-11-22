@@ -44,7 +44,8 @@
                             Keyboard="Text"  
                             HorizontalTextAlignment="Center"
                             Grid.Row="5" 
-                            Grid.ColumnSpan="2" />
+                            Grid.ColumnSpan="2" 
+                            x:Name="txtContrasena1"/>
 
                     <Entry  Placeholder="Repetir Contraseña" 
                             PlaceholderColor="#150050"  
@@ -52,7 +53,9 @@
                             Keyboard="Text"  
                             HorizontalTextAlignment="Center"
                             Grid.Row="6" 
-                            Grid.ColumnSpan="2" />
+                            Grid.ColumnSpan="2" 
+                            x:Name="txtContrasena2"
+                            />
 
                     <Image Source="candado.gif"
                            IsAnimationPlaying="True"
@@ -69,7 +72,10 @@
                             TextColor="White"
                             Grid.Row="7" 
                             Grid.ColumnSpan="2" 
-                            Margin="10,10,10,-5"/>
+                            Margin="10,10,10,-5"
+                            x:Name="BtnRContrasena"
+                            Clicked="BtnRContrasena_Clicked"
+                            />
 
                 </Grid>
             </Grid>

@@ -40,11 +40,12 @@
 
                     <Entry  Placeholder="E-mail" 
                             PlaceholderColor="#150050"  
-                            TextColor="#150050" 
-                            Keyboard="Text"  
+                            TextColor="#150050"   
                             HorizontalTextAlignment="Center"
                             Grid.Row="3" 
-                            Grid.ColumnSpan="2" />
+                            Grid.ColumnSpan="2" 
+                            x:Name="txtEmail"
+                            TextChanged="txtEmail_TextChanged"/>
 
                     <Image Source="candado.gif"
                            IsAnimationPlaying="True"
@@ -72,15 +73,15 @@
 
                     <Picker Title="Seleccione una pregunta .  .  ." 
                             x:Name="cb_preguntas"
-                            ItemsSource="{Binding CountryList}" 
-                            SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
                             TitleColor="#150050" 
                             Background="#F7F7F7"
                             Grid.Row="9" 
-                            Grid.ColumnSpan="2"/>
+                            Grid.ColumnSpan="2"
+                             ItemDisplayBinding="{Binding PRE_PREGUNTAS}"
+                            />
 
                     <Entry  Placeholder="" 
-                            x:Name="et_respuesta"
+                            x:Name="txtRespuesta"
                             PlaceholderColor="#150050"  
                             TextColor="#150050" Keyboard="Text"  
                             HorizontalTextAlignment="Center" 
