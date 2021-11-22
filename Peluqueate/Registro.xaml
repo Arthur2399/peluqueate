@@ -10,18 +10,6 @@
             <Grid>
 
                 <Grid Margin="20,0,20,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
 
                 <Label Text="¡Registrarme!" 
                        FontAttributes="Bold" 
@@ -151,14 +139,14 @@
                         x:Name="txtContrasena2"
                         />
 
-                <Button Text="Registrarme" 
+                <Button Text="Siguiente" 
                         Background="#150050" 
                         x:Name="btn_registrarme"
                         Clicked="btn_registrarme_Clicked"
                         BorderRadius="15" 
                         TextColor="White"
                         Grid.Row="10" 
-                        Grid.ColumnSpan="2" 
+                        Grid.Column="1" 
                         Margin="10,10,10,-5"/>
                  
                 

@@ -49,7 +49,8 @@
                     <StackLayout Orientation="Horizontal">
                         
                         <Label Text="¿Recuperar contraseña?" 
-                               TextColor="white"/>
+                               TextColor="white"
+                               x:Name="lb_preguntas"/>
                         
                         <Label Text="Registrarse" 
                                x:Name="lb_registrar"
