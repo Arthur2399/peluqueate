@@ -10,45 +10,44 @@
                    WidthRequest="100" 
                    HeightRequest="100" 
                    Margin="100,-270,90,290"/>
-            
+
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
 
                 <Image Source="http://192.168.194.128:82/api/image/avatar.png"
                        Grid.Row="1"  
-                       WidthRequest="50" 
-                       HeightRequest="50" 
-                       Margin="135,295,-15,350"/>
+                       Grid.Column="1"  
+                       Margin="50,100,50,0"/>
 
                 <Image Source="http://192.168.194.128:82/api/image/empleados.png" 
                        Grid.Row="1"  
-                       WidthRequest="50" 
-                       HeightRequest="50" 
-                       Margin="-170,285,-15,350"/>
+                       Grid.Column="0"  
+                       Margin="50,100,50,0"/>
 
                 <Label  Text="Soy Empleado" 
                         TextColor="White" 
                         x:Name="lb_empleados"
                         FontAttributes="Bold"
-                        Grid.Row="1" 
-                        Margin="75,390,200,250"/>
+                        HorizontalOptions="Center"
+                        Grid.Row="2" 
+                        Grid.Column="0" 
+                        Margin="0,0,0,0"/>
 
                 <Label  Text="Soy Cliente" 
                         TextColor="White" 
                         x:Name="lb_clientes"
                         FontAttributes="Bold"
-                        Grid.Row="1" 
-                        Margin="240,390,50,250"/>
+                        Grid.Row="2" 
+                        HorizontalOptions="Center"
+                        Grid.Column="1" 
+                        Margin="0,0,0,0"/>
 
                
                 <Label Text="2021 © Copyright by Universidad Israel." 
                        TextColor="White" 
-                       Grid.Row="2" 
-                       Margin="90,0,0,15"/>
+                       Grid.Row="3"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="Center"
+                       Margin="0,150,0,0"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

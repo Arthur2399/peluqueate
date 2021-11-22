@@ -120,14 +120,18 @@
                             BorderRadius="15" 
                             TextColor="White"
                             Grid.Row="10" 
-                            Grid.Column="0" />
+                            Grid.Column="0" 
+                            x:Name="BtnCancelar"
+                            Clicked="BtnCancelar_Clicked"/>
 
                     <Button Text="Confirmar" 
                             Background="#150050" 
                             BorderRadius="15" 
                             TextColor="White"
                             Grid.Row="10" 
-                            Grid.Column="1"/>
+                            Grid.Column="1"
+                            x:Name="BtnGuardar"
+                            Clicked="BtnGuardar_Clicked"/>
 
                 </Grid>
             </Grid>

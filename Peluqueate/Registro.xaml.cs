@@ -44,7 +44,7 @@ namespace Peluqueate
              PkProvincias.ItemsSource = _provincias;
         }
 
-        private async void genero()
+        private void genero()
         {
             PkrGenero.Items.Add("Hombre");
             PkrGenero.Items.Add("Mujer");

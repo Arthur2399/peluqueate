@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,10 +22,16 @@ namespace Peluqueate
         private ObservableCollection<Peluqueate.Models.Ciudades> _ciudades;
         private ObservableCollection<Peluqueate.Models.Usuarios> _Usuario;
         private ObservableCollection<Peluqueate.Models.Empleados> _Empleados;
+        int _pk;
+        string _tipo;
+        private Task<Plugin.Media.Abstractions.MediaFile> image;
+        private Plugin.Media.Abstractions.MediaFile imagepick;
         public EditarPerfil(int pk,string tipo)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            _pk = pk;
+            _tipo = tipo;
             provincias();
             llenarDatos(pk,tipo);
 
@@ -95,12 +102,16 @@ namespace Peluqueate
             var file = CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
                 Directory = "Sample",
-                Name = "file",
+                Name = "file.jpg",
             });
 
             if (file == null)
             {
                 return;
+            }
+            else
+            {
+                image = file;
             }
 
             //imagenPerfil.Source = file.Result.Path;
@@ -124,6 +135,10 @@ namespace Peluqueate
             {
                 return;
             }
+            else
+            {
+                imagepick = file;
+            }
 
             imagenPerfil.Source = file.Path;
             Console.WriteLine(file.Path);
@@ -134,6 +149,33 @@ namespace Peluqueate
             var code = PkProvincias.SelectedItem as Peluqueate.Models.Ciudades;
             int cod = code.ciu_codtab;
             ciudades(cod);
+        }
+
+        private async void BtnCancelar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MiPerfil(_pk, _tipo));
+        }
+
+        private async void BtnGuardar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                WebClient web = new WebClient();
+                if (_tipo.Equals("usr"))
+                {
+                var code = PkrCiudades.SelectedItem as Peluqueate.Models.Ciudades;
+                int ciudad = code.id_ciudades;
+                    if (imagepick != null)
+                    {
+                        web.UploadFile(url + "usuarios/img/"+_pk, "PUT", imagepick.Path);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+              await  DisplayAlert("Error", ex.Message, "Ok");
+            }
         }
     }
 }
