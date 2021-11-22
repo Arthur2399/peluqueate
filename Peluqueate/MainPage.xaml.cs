@@ -18,7 +18,7 @@ namespace Peluqueate
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            this.Master = new Master();
+            this.Master = new Master(pk,tipo);
             this.Detail = new NavigationPage(new Detail());      
             App.MasterDet = this;
 

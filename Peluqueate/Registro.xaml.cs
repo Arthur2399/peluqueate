@@ -48,7 +48,6 @@ namespace Peluqueate
         {
             PkrGenero.Items.Add("Hombre");
             PkrGenero.Items.Add("Mujer");
-            PkrGenero.Items.Add("Otro");
         }
 
 

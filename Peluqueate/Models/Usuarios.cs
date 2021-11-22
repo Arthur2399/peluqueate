@@ -12,7 +12,10 @@ namespace Peluqueate.Models
         public string user_apellido { get; set; }
         public string user_fechnacimiento { get; set; }
         public string user_email { set; get; }
-        public int user_genero { get; set; }
+        public string user_genero { get; set; }
         public string user_foto { get; set; }
+        public string ciu_detalle { get; set; }
+        public int ciu_codtab { get; set; }
+        public int ciud_codigo { get; set; }
     }
 }

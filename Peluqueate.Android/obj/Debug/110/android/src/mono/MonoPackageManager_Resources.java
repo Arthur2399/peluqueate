@@ -6,12 +6,9 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Peluqueate.dll",
-<<<<<<< HEAD
 		"Plugin.Media.dll",
-=======
 		"Plugin.Toast.Abstractions.dll",
 		"Plugin.Toast.dll",
->>>>>>> backend
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

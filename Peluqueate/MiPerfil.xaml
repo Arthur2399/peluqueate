@@ -10,10 +10,10 @@
             </Frame>
 
             <Image x:Name="imagenPerfil"  
-                            Source="avatar.png"
                             Grid.Row="1" 
                             Grid.ColumnSpan="2" 
-                            Margin="150,80,150,-210" />
+                            Margin="200,80,200,-210" 
+                             IsAnimationPlaying="True"/>
 
             <Grid>
                 <Grid Margin="20,0,20,0">
@@ -58,7 +58,7 @@
                            Grid.Column="0" />
 
                     <Entry  Placeholder="" 
-                            IsPassword="True" 
+                            x:Name="txtEmail" 
                             IsReadOnly="True"
                             PlaceholderColor="#150050" 
                             TextColor="#150050" 
@@ -68,6 +68,7 @@
                             Grid.Column="1" />
                     
                     <Label Text="Ciudad:" 
+                           x:Name="labelCiudad"
                            FontAttributes="Bold" 
                            FontSize="16" 
                            TextColor="#150050" 
@@ -77,7 +78,7 @@
                            Grid.Column="0" />
 
                     <Entry  Placeholder="" 
-                            IsPassword="True" 
+                            x:Name="txtCiudad"
                             IsReadOnly="True"
                             PlaceholderColor="#150050" 
                             TextColor="#150050" 
@@ -97,7 +98,7 @@
 
 
                     <Entry  Placeholder="" 
-                            IsPassword="True" 
+                            x:Name="txtFecha" 
                             IsReadOnly="True"
                             PlaceholderColor="#150050" 
                             TextColor="#150050" 
@@ -105,26 +106,7 @@
                             Keyboard="Text"  
                             Grid.Row="6" 
                             Grid.Column="1" />
-
-                    <Label Text="Tipo de cuenta:" 
-                           FontAttributes="Bold" 
-                           FontSize="16" 
-                           TextColor="#150050" 
-                           HorizontalOptions="End"
-                           Margin="0,30,0,0"
-                           Grid.Row="7" 
-                           Grid.Column="0" />
                     
-                    <Entry  Placeholder="" 
-                            IsPassword="True" 
-                            IsReadOnly="True"
-                            PlaceholderColor="#150050" 
-                            TextColor="#150050" 
-                            HorizontalTextAlignment="Center" 
-                            Keyboard="Text"  
-                            Grid.Row="7" 
-                            Grid.Column="1" />
-
                     <Button Text="Atras" 
                             Background="#150050" 
                             BorderRadius="15" 

@@ -18,14 +18,10 @@
       <action android:name="android.media.browse.MediaBrowserService" />
     </intent>
   </queries>
-<<<<<<< HEAD
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Peluqueate.Android" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Peluqueate.Android" android:theme="@style/MainTheme" android:usesCleartextTraffic="true">
     <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.peluqueate.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
     </provider>
-=======
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Peluqueate.Android" android:theme="@style/MainTheme" android:usesCleartextTraffic="true">
->>>>>>> backend
     <activity android:name="crc643285ddfd82d092a3.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="Peluqueate" android:theme="@style/MainTheme" />
     <activity android:name="crc643285ddfd82d092a3.SplashActivity" android:configChanges="screenSize" android:label="SplashActivity" android:noHistory="true" android:theme="@style/SplashTheme">
       <intent-filter>

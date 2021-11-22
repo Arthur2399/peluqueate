@@ -28,14 +28,18 @@
                 <StackLayout Grid.Row="1" Padding="40,10">
                     <Entry Placeholder="E-mail" 
                            PlaceholderColor="White" 
-                           TextColor="White"/>
+                           TextColor="White"
+                           x:Name="txtEmail"/>
                     <Entry Placeholder="Contraseña" 
                            PlaceholderColor="White" 
                            IsPassword="True" 
-                           TextColor="White"/>
+                           TextColor="White"
+                           x:Name="txtContrasena"/>
                     <Button Text="Inciar Sesión" 
                             Background="White" 
-                            BorderRadius="15"/>
+                            BorderRadius="15"
+                            x:Name="BtnIniciarSesion"
+                            Clicked="BtnIniciarSesion_Clicked"/>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="¿Recuperar contraseña?"
                                TextColor="white"/>

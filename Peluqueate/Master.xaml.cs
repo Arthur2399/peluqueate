@@ -12,9 +12,13 @@ namespace Peluqueate
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Master : ContentPage
     {
-        public Master()
+        int _pk;
+        string _tipo;
+        public Master(int pk, string tipo)
         {
             InitializeComponent();
+            _pk = pk;
+            _tipo = tipo;
         }
 
         private async void btn_AcercaDe_Clicked(object sender, EventArgs e)
@@ -26,7 +30,7 @@ namespace Peluqueate
         private async void btn_MiPerfil_Clicked(object sender, EventArgs e)
         {
             App.MasterDet.IsPresented = false;
-            await App.MasterDet.Detail.Navigation.PushAsync(new MiPerfil());
+            await App.MasterDet.Detail.Navigation.PushAsync(new MiPerfil(_pk,_tipo));
         }
 
         private void btn_MisCitas_Clicked(object sender, EventArgs e)

@@ -17,10 +17,9 @@
             </Frame>
 
             <Image x:Name="imagenPerfil"  
-                            Source="avatar.png"
                             Grid.Row="1" 
                             Grid.ColumnSpan="2" 
-                            Margin="150,80,150,-210"/>
+                            Margin="200,80,200,-210"/>
             
             <Grid>
                 <Grid Margin="20,0,20,0">
@@ -34,9 +33,10 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="Nombre" 
+                    <Entry Text="Nombre" 
                            x:Name="txt_nombre"
-                           FontAttributes="Bold" 
+                           FontAttributes="Bold"
+                           Placeholder="Nombre"
                            FontSize="20" 
                            TextColor="#150050" 
                            HorizontalOptions="End"
@@ -44,11 +44,12 @@
                            Grid.Row="3" 
                            Grid.Column="0" />
 
-                    <Label Text="Apellido" 
+                    <Entry Text="Apellido" 
                            x:Name="txt_apellido"
                            FontAttributes="Bold" 
                            FontSize="20" 
-                           TextColor="#150050" 
+                           TextColor="#150050"
+                           Placeholder="Apellido"
                            HorizontalOptions="Start"
                            Margin="0,30,0,0"
                            Grid.Row="3" 
@@ -78,26 +79,8 @@
                             Grid.Row="4" 
                             Grid.Column="1"/>
 
-                    <Label Text="Email:" 
-                           FontAttributes="Bold" 
-                           FontSize="16" 
-                           TextColor="#150050" 
-                           HorizontalOptions="End"
-                           Margin="0,30,0,0"
-                           Grid.Row="5" 
-                           Grid.Column="0" />
-
-                    <Entry  Placeholder="" 
-                            IsPassword="True" 
-                            IsReadOnly="True"
-                            PlaceholderColor="#150050" 
-                            TextColor="#150050" 
-                            HorizontalTextAlignment="Center" 
-                            Keyboard="Text"  
-                            Grid.Row="5" 
-                            Grid.Column="1" />
-
-                    <Label Text="Ciudad:" 
+                    <Label Text="Provincia:" 
+                           x:Name="Provincia"
                            FontAttributes="Bold" 
                            FontSize="16" 
                            TextColor="#150050" 
@@ -106,53 +89,31 @@
                            Grid.Row="6" 
                            Grid.Column="0" />
 
-                    <Entry  Placeholder="" 
-                            IsPassword="True" 
-                            IsReadOnly="True"
-                            PlaceholderColor="#150050" 
-                            TextColor="#150050" 
-                            HorizontalTextAlignment="Center" 
-                            Keyboard="Text"  
-                            Grid.Row="6" 
-                            Grid.Column="1" />
+                    <Picker Title="Seleccione provincia" 
+                        x:Name="PkProvincias"
+                        TitleColor="#150050" 
+                        Grid.Row="6" 
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                            SelectedIndexChanged="PkProvincias_SelectedIndexChanged"
+                     />
 
-                    <Label Text="Fecha de nacimiento:" 
-                           FontAttributes="Bold" 
-                           FontSize="16" 
-                           TextColor="#150050" 
-                           HorizontalOptions="End"
-                           Margin="0,30,0,0"
-                           Grid.Row="7" 
-                           Grid.Column="0" />
+                    <Label  Text="Ciudad:" 
+                            x:Name="Ciudad"
+                        FontAttributes="Bold" 
+                        HorizontalTextAlignment="Center" 
+                        TextColor="#150050" 
+                        FontSize="19" 
+                        Grid.Row="7" 
+                        Grid.Column="0 "/>
 
-                    <Entry  Placeholder="" 
-                            IsPassword="True" 
-                            IsReadOnly="True"
-                            PlaceholderColor="#150050" 
-                            TextColor="#150050" 
-                            HorizontalTextAlignment="Center" 
-                            Keyboard="Text"  
-                            Grid.Row="7" 
-                            Grid.Column="1" />
-
-                    <Label Text="Tipo de cuenta:" 
-                           FontAttributes="Bold" 
-                           FontSize="16" 
-                           TextColor="#150050" 
-                           HorizontalOptions="End"
-                           Margin="0,30,0,0"
-                           Grid.Row="8" 
-                           Grid.Column="0" />
-
-                    <Entry  Placeholder="" 
-                            IsPassword="True" 
-                            IsReadOnly="True"
-                            PlaceholderColor="#150050" 
-                            TextColor="#150050" 
-                            HorizontalTextAlignment="Center" 
-                            Keyboard="Text"  
-                            Grid.Row="8" 
-                            Grid.Column="1" />
+                    <Picker Title="Seleccione ciudad"
+                        x:Name="PkrCiudades"
+                        TitleColor="#150050" 
+                        Grid.Row="7" 
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                        />
 
                     <Button Text="Cancelar" 
                             Background="#150050" 
