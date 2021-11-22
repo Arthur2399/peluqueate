@@ -76,6 +76,12 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\draw
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\xml\file_paths.xml
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\foco.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\splash.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\subir.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\camara.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\campanados.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\campanatres.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\campanacuatro.png
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\campanauno.png
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\uploadflags.txt
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\android\assets\FormsViewGroup.dll
@@ -645,5 +651,3 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\stamp\_C
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\subir.png
-C:\Users\arthu\source\repos\Peluqueate\Peluqueate.Android\obj\Debug\110\res\drawable\camara.png

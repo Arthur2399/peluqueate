@@ -16,6 +16,22 @@ namespace Peluqueate
         {
             InitializeComponent();
         }
+        private async void btn_MiPerfil_Clicked(object sender, EventArgs e)
+        {
+            App.MasterDet.IsPresented = false;
+            await App.MasterDet.Detail.Navigation.PushAsync(new MiPerfil());
+        }
+
+        private async void btn_MisCitas_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterDet.Detail.Navigation.PushAsync(new VerCitas());
+        }
+
+
+        private async void btn_AgendarCitas_Clicked(object sender, EventArgs e)
+        {
+            await App.MasterDet.Detail.Navigation.PushAsync(new AgendarCitas());
+        }
 
         private async void btn_AcercaDe_Clicked(object sender, EventArgs e)
         {
@@ -23,27 +39,8 @@ namespace Peluqueate
             await App.MasterDet.Detail.Navigation.PushAsync(new AcercaDe());
         }
 
-        private async void btn_MiPerfil_Clicked(object sender, EventArgs e)
-        {
-            App.MasterDet.IsPresented = false;
-            await App.MasterDet.Detail.Navigation.PushAsync(new MiPerfil());
-        }
-
-        private void btn_MisCitas_Clicked(object sender, EventArgs e)
-        {
-
-        }
 
 
-        private void btn_AgendarCitas_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_AcercaDe_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
         private async void btn_Salir_Clicked_1(object sender, EventArgs e)
         {
             App.MasterDet.IsPresented = false;

@@ -3,10 +3,123 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Peluqueate.Detail">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hola CUl"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Background="white">
+                
+                <Image  Source="campanaUno.png" Margin="0,0,0,0"/>
+                <Label Text="Aprovecha nuestros increibles descuentos en barberias con los mejores profesionales en el cuidado de tu barba y con productos de calidad garantizada."
+                       FontSize="15" 
+                       Margin="10,0,10,0"
+                       TextColor="#150050"/>
+                <Grid>
+                    <Button Grid.Row="0" 
+                            Grid.Column="0"
+                            Text="Quiero agendar"
+                            TextColor="White"
+                            Background="#150050" 
+                            BorderRadius="15"
+                            Margin="10,0,0,0"
+                            x:Name="agendarUno"
+                            Clicked="agendarUno_Clicked"/>
+
+                    <Button Grid.Row="0" 
+                            Grid.Column="1"
+                            Text="Ver citas"
+                            TextColor="White"
+                            Background="#150050"
+                            Margin="0,0,10,0"
+                            BorderRadius="15"
+                            x:Name="verUno"
+                            Clicked="verUno_Clicked"/>
+
+
+                </Grid>
+                <Image Source="campanaTres.png" Margin="0,0,0,0"/>
+                <Label Text="Aprovecha nuestros increibles descuentos en SPA con los mejores profesionales en el cuidado de tu piel y con productos de calidad garantizada."
+                       FontSize="15" 
+                       Margin="10,0,10,0"
+                       TextColor="#150050"/>
+                <Grid>
+                    <Button Grid.Row="0" 
+                            Grid.Column="0"
+                            Text="Quiero agendar"
+                            TextColor="White"
+                            Background="#150050" 
+                            BorderRadius="15"
+                            Margin="10,0,0,0"
+                            x:Name="agendarDos"
+                            Clicked="agendarDos_Clicked"/>
+
+                    <Button Grid.Row="0" 
+                            Grid.Column="1"
+                            Text="Ver citas"
+                            TextColor="White"
+                            Background="#150050"
+                            Margin="0,0,10,0"
+                            BorderRadius="15"
+                            x:Name="verDos"
+                            Clicked="verDos_Clicked" />
+
+
+                </Grid>
+                <Image Source="campanaDos.png" Margin="0,0,0,0"/>
+                <Label Text="Aprovecha nuestros increibles descuentos en cortes de cabello con los mejores profesionales en el cuidado de tu pelo y con productos de calidad garantizada."
+                       FontSize="15" 
+                       Margin="10,0,10,0"
+                       TextColor="#150050"/>
+                <Grid>
+                    <Button Grid.Row="0" 
+                            Grid.Column="0"
+                            Text="Quiero agendar"
+                            TextColor="White"
+                            Background="#150050" 
+                            BorderRadius="15"
+                            Margin="10,0,0,0"
+                            x:Name="agendarTres"
+                            Clicked="agendarTres_Clicked"/>
+
+                    <Button Grid.Row="0" 
+                            Grid.Column="1"
+                            Text="Ver citas"
+                            TextColor="White"
+                            Background="#150050"
+                            Margin="0,0,10,0"
+                            BorderRadius="15"
+                            x:Name="verTres"
+                            Clicked="verTres_Clicked"/>
+
+                </Grid>
+                <Image Source="campanaCuatro.png" Margin="0,0,0,0"/>
+                <Label Text="Aprovecha nuestros increibles descuentos en masajes con los mejores profesionales en el arte de la relajacion y con productos de calidad garantizada."
+                       FontSize="15" 
+                       Margin="10,0,10,0"
+                       TextColor="#150050"/>
+                <Grid Margin="0,0,0,10">
+                    <Button Grid.Row="0" 
+                            Grid.Column="0"
+                            Text="Quiero agendar"
+                            TextColor="White"
+                            Background="#150050" 
+                            BorderRadius="15"
+                            Margin="10,0,0,0"
+                            x:Name="agendarCuatro"
+                            Clicked="agendarCuatro_Clicked"/>
+
+                    <Button Grid.Row="0" 
+                            Grid.Column="1"
+                            Text="Ver citas"
+                            TextColor="White"
+                            Background="#150050"
+                            Margin="0,0,10,0"
+                            BorderRadius="15"
+                            x:Name="verCuatro"
+                            Clicked="verCuatro_Clicked"/>
+
+                </Grid>
+               
+
+            </StackLayout>
+        </ScrollView>
+    
     </ContentPage.Content>
 </ContentPage>
