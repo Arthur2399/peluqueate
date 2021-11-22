@@ -16,6 +16,7 @@ namespace Peluqueate
         {
             InitializeComponent();
             lbRegistrarFucn();
+            lbPreguntasFucn();
             NavigationPage.SetHasNavigationBar(this, false);
 
         }
@@ -32,6 +33,18 @@ namespace Peluqueate
                 )
             });
 
+        }
+
+        void lbPreguntasFucn()
+        {
+            lb_preguntas.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(() =>
+                {
+                    Navigation.PushAsync(new PreguntasRespuestas());
+                }
+                )
+            });
         }
 
         private async void btn_IniciarSesion_Clicked(object sender, EventArgs e)
