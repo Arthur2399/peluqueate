@@ -17,5 +17,15 @@ namespace Peluqueate
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private async void bt_atras_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        private async void bt_siguiente_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NuevaCita());
+        }
     }
 }

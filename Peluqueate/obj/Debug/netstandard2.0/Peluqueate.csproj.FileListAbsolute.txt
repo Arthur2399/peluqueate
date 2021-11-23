@@ -1,9 +1,8 @@
-C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.csproj.AssemblyReference.cache
-C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.deps.json
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\ref\Peluqueate.dll
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\bin\Debug\netstandard2.0\Peluqueate.pdb
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Peluqueate.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\AcercaDe.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\AgendarCitas.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -15,6 +14,7 @@ C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Login
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\Master.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\MiPerfil.xaml.g.cs
+C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\NuevaCita.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\PreguntasRespuestas.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\PreLogin.xaml.g.cs
 C:\Users\arthu\source\repos\Peluqueate\Peluqueate\obj\Debug\netstandard2.0\RegistrarPreguntas.xaml.g.cs

@@ -12,10 +12,10 @@ namespace Peluqueate
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PreLogin());
+            MainPage = new NavigationPage(new AgendarCitas());
         }
 
-        protected override void OnStart()
+        protected override void OnStart() 
         {
         }
 

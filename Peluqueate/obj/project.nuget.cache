@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7aAi02Cm1Ud5uEqGiCWApAr0DyFLXjWAHWNiPWKc8ArWr840DJYKWLDIwK2iXPHYN7MXLBjebMsVFx92n8t26Q==",
+  "dgSpecHash": "ZD7KPcEdCQa41sf7vXvxJOF0n5BfjwYFgq20Csqfr2HlpMQaAuPQR69WQQCohRolZbvT9vWUhRq+zWste7UbJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\arthu\\source\\repos\\Peluqueate\\Peluqueate\\Peluqueate.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\arthu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\arthu\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\arthu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\arthu\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512"
+    "C:\\Users\\arthu\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512",
+    "C:\\Users\\arthu\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2244\\xamarin.forms.maps.5.0.0.2244.nupkg.sha512"
   ],
   "logs": []
 }
