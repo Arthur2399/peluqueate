@@ -74,10 +74,9 @@ namespace Peluqueate
                     var content = await client.GetStringAsync(url + "usuarios/login/" + txtEmail.Text);
                     List<Peluqueate.Models.Usuarios> post = JsonConvert.DeserializeObject<List<Peluqueate.Models.Usuarios>>(content);
                     _pkUsuario = new ObservableCollection<Peluqueate.Models.Usuarios>(post);
-                    var pk = ((Peluqueate.Models.Usuarios)_pkUsuario[0]).id_usuarios;
-                   
-                   await DisplayAlert("Guardado", "Guardado Correctamente"+pk.ToString(), "Ok");
-                   await Navigation.PushAsync(new MainPage(pk,"usr"));
+                    int pk = ((Peluqueate.Models.Usuarios)_pkUsuario[0]).id_usuarios;
+                   await DisplayAlert("Guardado", "Guardado Correctamente", "Ok");
+                   await Navigation.PushAsync(new RegistrarPreguntas(pk));
                 }
                 else
                 {
