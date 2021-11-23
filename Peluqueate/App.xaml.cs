@@ -15,7 +15,7 @@ namespace Peluqueate
             MainPage = new NavigationPage(new PreLogin());
         }
 
-        protected override void OnStart()
+        protected override void OnStart() 
         {
         }
 

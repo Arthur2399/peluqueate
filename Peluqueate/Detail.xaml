@@ -5,8 +5,9 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Background="white">
-                
-                <Image  Source="campanaUno.png" Margin="0,0,0,0"/>
+
+     
+                    <Image  Source="campanaUno.png" Margin="0,0,0,0"/>
                 <Label Text="Aprovecha nuestros increibles descuentos en barberias con los mejores profesionales en el cuidado de tu barba y con productos de calidad garantizada."
                        FontSize="15" 
                        Margin="10,0,10,0"

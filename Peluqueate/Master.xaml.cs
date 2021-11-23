@@ -34,7 +34,7 @@ namespace Peluqueate
 
         private async void btn_AgendarCitas_Clicked(object sender, EventArgs e)
         {
-            await App.MasterDet.Detail.Navigation.PushAsync(new AgendarCitas());
+            await App.MasterDet.Detail.Navigation.PushAsync(new AgendarCitas(_pk,_tipo));
         }
 
         private async void btn_AcercaDe_Clicked(object sender, EventArgs e)
