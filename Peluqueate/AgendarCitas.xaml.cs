@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,9 @@ namespace Peluqueate
         private readonly HttpClient client = new HttpClient();
         private ObservableCollection<Peluqueate.Models.Usuarios> _Usuario;
         private ObservableCollection<Peluqueate.Models.Local> _Local;
+        private ObservableCollection<Peluqueate.Models.CabeceraCita> _CabeceraCita;
+
+
 
         public AgendarCitas(int pk,string tipo)
         {
@@ -68,7 +72,31 @@ namespace Peluqueate
 
         private async void bt_siguiente_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NuevaCita());
+            try
+            {
+                WebClient web = new WebClient();
+                string date = JsonConvert.SerializeObject(fecha.Date);
+                string time = JsonConvert.SerializeObject(hora.Time);
+               var local = PkrSucursal.SelectedItem as Peluqueate.Models.Local;
+                int pkLocal = local.id_local;
+                var request = new System.Collections.Specialized.NameValueCollection();
+                request.Add("id_usuarios", _pk.ToString());
+                request.Add("id_local", pkLocal.ToString());
+                request.Add("sercab_fecha", date.ToString());
+                request.Add("sercab_hora", time.ToString());
+                web.UploadValues(url + "cabeceracita", "POST", request);
+                var content = await client.GetStringAsync(url + "cabeceracita/pk");
+               List<Peluqueate.Models.CabeceraCita> post = JsonConvert.DeserializeObject<List<Peluqueate.Models.CabeceraCita>>(content);
+               _CabeceraCita= new ObservableCollection<Peluqueate.Models.CabeceraCita>(post);
+               int pkCabecera = ((Peluqueate.Models.CabeceraCita)_CabeceraCita[0]).id_serviciocabecera;
+               await DisplayAlert("Guardad", "Guardado Correctamente" , "Ok");
+               await Navigation.PushAsync(new NuevaCita(pkCabecera,pkLocal));
+            }
+            catch(Exception ex)
+            {
+              await  DisplayAlert("Error", ex.Message, "Ok");
+            }
+            
         }
 
         private async void bt_verMapa_Clicked(object sender, EventArgs e)

@@ -59,7 +59,7 @@
                        Grid.Column="0"
                        Margin="35,25,0,0"/>
 
-                <TimePicker Time="4:15:26" 
+                <TimePicker x:Name="hora"
                             Grid.Row="8"
                             Grid.Column="1"
                             Margin="0,0,0,0"
@@ -75,8 +75,7 @@
                        Margin="35,25,0,0"/>
                 
                 <DatePicker x:Name="fecha"
-                            MinimumDate="01/01/2018"
-                            MaximumDate="12/31/2018"
+                            MaximumDate="12/31/3000"
                             TextColor="#150050"
                             Grid.Row="9" 
                             Grid.Column="1"/>

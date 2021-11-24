@@ -18,69 +18,73 @@
 
                 <Picker Title="Seleccionte un servicio . . ."
                         Margin="20,0,20,0"
-                        ItemsSource="{Binding CountryList}"  
-                        SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
                         TitleColor="#150050" 
                         Grid.Row="2" 
-                        Grid.ColumnSpan="2"/>
+                        Grid.ColumnSpan="2"
+                        x:Name="PkrServicio"
+                        ItemDisplayBinding="{Binding ser_servicio}"
+                        SelectedIndexChanged="PkrServicio_SelectedIndexChanged"/>
 
                 <Picker Title="Seleccionte al personal . . ."
                         Margin="20,0,20,0"
-                        ItemsSource="{Binding CountryList}"  
-                        SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" 
                         TitleColor="#150050" 
                         Grid.Row="3" 
-                        Grid.ColumnSpan="2"/>
+                        Grid.ColumnSpan="2"
+                        x:Name="PkrPersonal"
+                        ItemDisplayBinding="{Binding empe_nombre}"
+                        />
                 <Grid Grid.Row="4" Grid.ColumnSpan="2">
-                        
-                    <Button ImageSource="check.png"
-                            Background="#150050"
-                            BorderRadius="10"
-                            Margin="20,0,0,0"
-                            Grid.Row="0" 
-                            Grid.Column="0"/>
-                        
+                                               
                     <Button ImageSource="guardar.png"
                             Background="#150050"
                             BorderRadius="10"
                             Margin="10,0,5,0"
                             Grid.Row="0" 
-                            Grid.Column="1"/>
-                        
+                            Grid.Column="0"
+                            x:Name="Guardar"
+                            Clicked="Guardar_Clicked"/>
+
                     <Button ImageSource="eliminar.png"
                             Background="#150050"
                             BorderRadius="10"
                             Margin="5,0,10,0"
                             Grid.Row="0" 
-                            Grid.Column="2"/>
+                            Grid.Column="1"
+                            x:Name="Eliminar"
+                            Clicked="Eliminar_Clicked"/>
                         
-                    <Button ImageSource="editar.png"  
-                            Background="#150050"
-                            BorderRadius="10"
-                            Margin="0,0,20,0"
-                            Grid.Row="0" 
-                            Grid.Column="3"/>
+
                 </Grid>
-
-
-
-                <Button x:Name="bt_atras"
-                        Text="retroceder"
+                <ListView x:Name="RegistroServicio" ItemSelected="RegistroServicio_ItemSelected" Grid.Row="6" Grid.RowSpan="7" Grid.ColumnSpan="2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label x:Name="blservicio" Text="{Binding ser_servicio}" Grid.Column="0" FontSize="Medium"/>
+                                        <Label x:Name="blnombre" Text="{Binding empe_nombre}" Grid.Column="1" FontSize="Medium"/>
+                                        <Label x:Name="blapellido" Text="{Binding ser_costo}" Grid.Column="2" FontSize="Medium"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button x:Name="bt_Terminar"
+                        Text="Terminar"
+                        ImageSource="check.png"
                         Background="#150050"
                         TextColor="White"
                         BorderRadius="10"
-                        Grid.Row="10"
-                        Grid.Column="0"
-                        Margin="10,0,10,5"/>
-
-                <Button x:Name="bt_siguiente"
-                        Text="siguiente"
-                        Background="#150050"
-                        TextColor="White"
-                        BorderRadius="10"
-                        Grid.Row="10"
-                        Grid.Column="1"
-                        Margin="10,0,10,5"/>
+                        Grid.Row="13"
+                        Grid.ColumnSpan="2"
+                        Margin="10,0,10,5"
+                        Clicked="bt_Terminar_Clicked"/>
 
             </Grid>
 
