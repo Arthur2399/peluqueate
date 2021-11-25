@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.EditarPerfil">
+    <ContentPage.Content>
+        <StackLayout>
+
+          
+            <Frame Background="#150050" Margin="0,-10,0,-60" >
+                <Button Text=" Editar Perfil"  
+                        FontSize="18" 
+                        BackgroundColor="#150050" 
+                        HorizontalOptions="Start" 
+                        TextColor="White" 
+                        Image="foco.png" 
+                        Margin="100,0,0,0"/>
+            </Frame>
+
+            <Image x:Name="imagenPerfil"  
+                            Grid.Row="1" 
+                            Grid.ColumnSpan="2" 
+                            Margin="200,80,200,-210"/>
+            
+            <Grid>
+                <Grid Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry Text="Nombre" 
+                           x:Name="txt_nombre"
+                           FontAttributes="Bold"
+                           Placeholder="Nombre"
+                           FontSize="20" 
+                           TextColor="#150050" 
+                           HorizontalOptions="End"
+                           Margin="0,30,0,0"
+                           Grid.Row="3" 
+                           Grid.Column="0" />
+
+                    <Entry Text="Apellido" 
+                           x:Name="txt_apellido"
+                           FontAttributes="Bold" 
+                           FontSize="20" 
+                           TextColor="#150050"
+                           Placeholder="Apellido"
+                           HorizontalOptions="Start"
+                           Margin="0,30,0,0"
+                           Grid.Row="3" 
+                           Grid.Column="1" />
+
+                    <Button Text="Tomar Foto" 
+                            x:Name="btn_tomarFoto" 
+                            Clicked="btn_tomarFoto_Clicked"
+                            Font="10"
+                            HorizontalOptions="End"
+                            Image="camara.png" 
+                            Background="#150050" 
+                            TextColor="White"
+                            BorderRadius="15" 
+                            Grid.Row="4" 
+                            Grid.Column="0" />
+
+                    <Button Text="Subir Foto" 
+                            x:Name="btn_subirFoto" 
+                            Background="#150050" 
+                            BorderRadius="15" 
+                            Image="subir.png" 
+                            HorizontalOptions="Start"
+                            TextColor="White"
+                            Clicked="btn_subirFoto_Clicked"
+                            Font="10"
+                            Grid.Row="4" 
+                            Grid.Column="1"/>
+
+                    <Label Text="Provincia:" 
+                           x:Name="Provincia"
+                           FontAttributes="Bold" 
+                           FontSize="16" 
+                           TextColor="#150050" 
+                           HorizontalOptions="End"
+                           Margin="0,30,0,0"
+                           Grid.Row="6" 
+                           Grid.Column="0" />
+
+                    <Picker Title="Seleccione provincia" 
+                        x:Name="PkProvincias"
+                        TitleColor="#150050" 
+                        Grid.Row="6" 
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                            SelectedIndexChanged="PkProvincias_SelectedIndexChanged"
+                     />
+
+                    <Label  Text="Ciudad:" 
+                            x:Name="Ciudad"
+                        FontAttributes="Bold" 
+                        HorizontalTextAlignment="Center" 
+                        TextColor="#150050" 
+                        FontSize="19" 
+                        Grid.Row="7" 
+                        Grid.Column="0 "/>
+
+                    <Picker Title="Seleccione ciudad"
+                        x:Name="PkrCiudades"
+                        TitleColor="#150050" 
+                        Grid.Row="7" 
+                        Grid.Column="1"
+                         ItemDisplayBinding="{Binding ciu_detalle}"
+                        />
+
+                    <Button Text="Cancelar" 
+                            Background="#150050" 
+                            BorderRadius="15" 
+                            TextColor="White"
+                            Grid.Row="10" 
+                            Grid.Column="0" 
+                            x:Name="BtnCancelar"
+                            Clicked="BtnCancelar_Clicked"/>
+
+                    <Button Text="Confirmar" 
+                            Background="#150050" 
+                            BorderRadius="15" 
+                            TextColor="White"
+                            Grid.Row="10" 
+                            Grid.Column="1"
+                            x:Name="BtnGuardar"
+                            Clicked="BtnGuardar_Clicked"/>
+
+                </Grid>
+            </Grid>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

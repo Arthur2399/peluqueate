@@ -6,14 +6,16 @@ namespace Peluqueate
 {
     public partial class App : Application
     {
+        public static MasterDetailPage MasterDet { get; set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new PreLogin());
         }
 
-        protected override void OnStart()
+        protected override void OnStart() 
         {
         }
 

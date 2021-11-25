@@ -1,14 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="fragment_container_view_tag" type="id"/>
-    <item name="visible_removing_fragment_view_tag" type="id"/>
-    <declare-styleable name="Fragment">
-        <attr name="android:name"/>
-        <attr name="android:id"/>
-        <attr name="android:tag"/>
-    </declare-styleable>
-    <declare-styleable name="FragmentContainerView">
-        <attr name="android:name"/>
-        <attr name="android:tag"/>
-    </declare-styleable>
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/res/values/gmscore_version.xml -->
+<eat-comment/>
+<integer name="google_play_services_version">12451000</integer>
+<!-- java/com/google/android/gmscore/integ/client/common/res/values/strings.xml -->
+<eat-comment/>
+<string name="common_google_play_services_unknown_issue"><xliff:g id="app_name">%1$s</xliff:g> is having trouble with Google Play services. Please try again.</string>
 </resources>

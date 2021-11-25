@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.RegistrarPreguntas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame Background="#150050" Margin="0,-10,0,-50">
+                <Image Source="peluqueate.png" Margin="110,0,110,0"/>
+            </Frame>
+            <Grid>
+
+                <Grid Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Preguntas de seguridad" 
+                           FontAttributes="Bold" 
+                           FontSize="26" 
+                           TextColor="#150050" 
+                           HorizontalOptions="Center"
+                           Grid.Row="1" 
+                           Grid.ColumnSpan="2" />
+
+                    <Label  Text="Para segurar tu cuenta es necesario que respondas las siguientes preguntas, asi podras recuperar tu cuenta en caso de que se te haya olvidado la contraseña."
+                            HorizontalTextAlignment="Start" 
+                            TextColor="#150050"  
+                            Grid.Row="2" 
+                            Grid.ColumnSpan="2" 
+                            Margin="0,0,0,0" />
+                                       
+                    <Image Source="candado.gif"
+                           IsAnimationPlaying="True"
+                           HorizontalOptions="Center"
+                           Grid.Row="3"
+                           Margin="0,15,0,0"
+                           Grid.ColumnSpan ="2"
+                           Grid.RowSpan ="2"/>
+
+                    <Picker Title="Seleccione una pregunta .  .  ." 
+                            x:Name="cb_preguntasUno"
+                            ItemDisplayBinding="{Binding PRE_PREGUNTAS}"
+                            TitleColor="#150050" 
+                            Background="#F7F7F7"
+                            Grid.Row="5" 
+                            Grid.ColumnSpan="2"
+                            SelectedIndexChanged="cb_preguntasUno_SelectedIndexChanged"/>
+                    
+                    <Entry  Placeholder="" 
+                            x:Name="txtRespuestaUno"
+                            PlaceholderColor="#150050"  
+                            TextColor="#150050" Keyboard="Text"  
+                            HorizontalTextAlignment="Center" 
+                            Grid.Row="6" 
+                            Grid.ColumnSpan="2" 
+                            TextChanged="txtRespuestaUno_TextChanged"/>
+
+                    <Picker Title="Seleccione una pregunta .  .  ." 
+                            x:Name="cb_preguntasDos"
+                            ItemDisplayBinding="{Binding PRE_PREGUNTAS}"
+                            TitleColor="#150050" 
+                            Background="#F7F7F7"
+                            Grid.Row="7" 
+                            Grid.ColumnSpan="2"
+                            SelectedIndexChanged="cb_preguntasDos_SelectedIndexChanged"/>
+                    
+                    <Entry  Placeholder="" 
+                            x:Name="txtRespuestaDos"
+                            PlaceholderColor="#150050"  
+                            TextColor="#150050" Keyboard="Text"  
+                            HorizontalTextAlignment="Center" 
+                            Grid.Row="8" 
+                            Grid.ColumnSpan="2" 
+                            TextChanged="txtRespuestaDos_TextChanged"/>
+
+                    <Picker Title="Seleccione una pregunta .  .  ." 
+                            x:Name="cb_preguntasTre"
+                            ItemDisplayBinding="{Binding PRE_PREGUNTAS}"
+                            TitleColor="#150050" 
+                            Background="#F7F7F7"
+                            Grid.Row="9" 
+                            Grid.ColumnSpan="2"
+                            SelectedIndexChanged="cb_preguntasTre_SelectedIndexChanged"/>
+
+                    <Entry  Placeholder="" 
+                            x:Name="txtRespuestaTres"
+                            PlaceholderColor="#150050"  
+                            TextColor="#150050" Keyboard="Text"  
+                            HorizontalTextAlignment="Center" 
+                            Grid.Row="10" 
+                            Grid.ColumnSpan="2" 
+                            TextChanged="txtRespuestaTres_TextChanged"/>
+
+                    <Button Text="Registrarme" 
+                            x:Name="bt_registrarme"
+                            Clicked="bt_registrarme_Clicked"
+                            Background="#150050" 
+                            BorderRadius="15" 
+                            TextColor="White"
+                            Grid.Row="11" 
+                            Grid.ColumnSpan="2" 
+                            Margin="10,10,10,-5"/>
+
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

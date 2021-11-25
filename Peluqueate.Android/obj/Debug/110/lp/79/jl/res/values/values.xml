@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="notification_material_background_media_default_color">#ff424242</color>
-    <color name="primary_text_default_material_dark">#ffffffff</color>
-    <color name="secondary_text_default_material_dark">#b3ffffff</color>
-    <item name="media_controller_compat_view_tag" type="id"/>
-    <integer name="cancel_button_image_alpha">127</integer>
-    <style name="TextAppearance.Compat.Notification.Info.Media"/>
-    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
-    <style name="TextAppearance.Compat.Notification.Media"/>
-    <style name="TextAppearance.Compat.Notification.Time.Media"/>
-    <style name="TextAppearance.Compat.Notification.Title.Media"/>
+    <item name="fragment_container_view_tag" type="id"/>
+    <item name="special_effects_controller_view_tag" type="id"/>
+    <item name="visible_removing_fragment_view_tag" type="id"/>
+    <declare-styleable name="Fragment">
+        <attr name="android:name"/>
+        <attr name="android:id"/>
+        <attr name="android:tag"/>
+    </declare-styleable>
+    <declare-styleable name="FragmentContainerView">
+        <attr name="android:name"/>
+        <attr name="android:tag"/>
+    </declare-styleable>
 </resources>

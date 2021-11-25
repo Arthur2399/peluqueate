@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Peluqueate.PreLogin">
+    <ContentPage.Content>
+        <Grid >
+            <Image Source="fondo.png" Aspect="AspectFill"/>
+            <BoxView Color="#150050" Opacity="0.7"/>
+            <Image Source="peluqueate.png"
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   Margin="100,-270,90,290"/>
+
+            <Grid>
+
+                <Image Source="http://192.168.194.128:82/api/image/avatar.png"
+                       Grid.Row="1"  
+                       Grid.Column="1"  
+                       Margin="50,100,50,0"/>
+
+                <Image Source="http://192.168.194.128:82/api/image/empleados.png" 
+                       Grid.Row="1"  
+                       Grid.Column="0"  
+                       Margin="50,100,50,0"/>
+
+                <Label  Text="Soy Empleado" 
+                        TextColor="White" 
+                        x:Name="lb_empleados"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Grid.Row="2" 
+                        Grid.Column="0" 
+                        Margin="0,0,0,0"/>
+
+                <Label  Text="Soy Cliente" 
+                        TextColor="White" 
+                        x:Name="lb_clientes"
+                        FontAttributes="Bold"
+                        Grid.Row="2" 
+                        HorizontalOptions="Center"
+                        Grid.Column="1" 
+                        Margin="0,0,0,0"/>
+
+               
+                <Label Text="2021 © Copyright by Universidad Israel." 
+                       TextColor="White" 
+                       Grid.Row="3"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="Center"
+                       Margin="0,150,0,0"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
